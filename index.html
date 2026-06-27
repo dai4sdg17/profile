@@ -12,11 +12,12 @@
             --layer:    #12172a;
             --rim:      #1e2540;
             --rim-hi:   #2e3860;
-            --gold:     #b8883a;
-            --gold-hi:  #d4a55a;
-            --gold-dim: #5c4118;
-            --cream:    #ede8df;
-            --smoke:    #6e7388;
+            --gold:     #c79a4e;   /* 가독성 향상: 더 밝은 앰버 골드 */
+            --gold-hi:  #e0b870;
+            --gold-dim: #5c4118;   /* 테두리/그라데이션 전용 (텍스트 아님) */
+            --gold-soft:#b7964f;   /* 라벨 텍스트용 — 어두운 배경에서 판독 가능한 골드 */
+            --cream:    #f0ebe2;
+            --smoke:    #9ba1ba;   /* 가독성 향상: 보조 텍스트 대비 상향 (AA 충족) */
             --serif:    Georgia, 'Times New Roman', serif;
             --sans:     system-ui, -apple-system, 'Segoe UI', sans-serif;
             --mono:     'Courier New', Courier, monospace;
@@ -260,7 +261,7 @@
         .research-label {
             font-family: var(--mono);
             font-size: .65rem;
-            color: var(--gold-dim);
+            color: var(--gold-soft);
             letter-spacing: .1em;
             margin-bottom: .85rem;
         }
@@ -366,7 +367,7 @@
         .act-idx {
             font-family: var(--mono);
             font-size: .68rem;
-            color: var(--gold-dim);
+            color: var(--gold-soft);
             letter-spacing: .06em;
             padding-top: .25rem;
         }
